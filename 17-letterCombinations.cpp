@@ -19,6 +19,9 @@ public:
                          "wxyz"};
     void letterCombinations(const string &digits,int index,const string &s)
     {
+        if(digits=="")
+            return;
+
         if(index == digits.size())
         {
             res.push_back(s);
